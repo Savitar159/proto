@@ -71,7 +71,24 @@
                     </center>
             </div>
             <div class="user-noticias">
-                
+                <div id="carrusel">
+    <a href="#" class="left-arrow"><</a>
+    <a href="#" class="right-arrow">></a>
+    <div class="carrusel">
+        <div class="product" id="product_0">
+            <img class="img-ca" src="https://st.mextudia.com/wp-content/uploads/2019/12/servicio-social-IPN.jpg" />
+        </div>
+        <div class="product" id="product_1">
+            <img class="img-ca" src="https://ahorasipaso.com/wp-content/uploads/2020/12/carreras-ipn-2022.jpg" />
+        </div>
+        <div class="product" id="product_2">
+            <img class="img-ca" src="https://i.ytimg.com/vi/P6mmi7NJL-w/maxresdefault.jpg" />
+        </div>
+        <div class="product" id="product_3">
+            <img src="https://www.sites.upiicsa.ipn.mx/uteycv/regreso/imas/plan.png"/>
+        </div>
+    </div>
+</div>
             </div>
         </article>
         
@@ -91,7 +108,55 @@
                     </div> 
                 </div>
             </div>
-                        
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+var current = 0;
+var imagenes = new Array();
+ 
+$(document).ready(function() {
+    var numImages = 6;
+    if (numImages <= 3) {
+        $('.right-arrow').css('display', 'none');
+        $('.left-arrow').css('display', 'none');
+    }
+ 
+    $('.left-arrow').on('click',function() {
+        if (current > 0) {
+            current = current - 1;
+        } else {
+            current = numImages - 3;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+ 
+        return false;
+    });
+ 
+    $('.left-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+ 
+    $('.right-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+ 
+    $('.right-arrow').on('click', function() {
+        if (numImages > current + 3) {
+            current = current+1;
+        } else {
+            current = 0;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+ 
+        return false;
+    }); 
+ });
+</script>          
     <script src="JS/eventos.js"></script>
     </body>
 </html>
