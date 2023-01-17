@@ -1,30 +1,50 @@
 .user-portada{
-    background:#E9EFF8;
+    background:#F9FAFB;
     width:100%;
-    height:40vh;
+    height:25vh;
+    padding:2.5%;
+}
+.ipn{
+	color:#75003E;
+	font-size:150%;
+}
+.titulo-ipn{
+	float: none;
+	width:70%;
+	height:10vh;
+	margin-left:12%;
 }
 .user-perfil{
-    margin-top:-10%;
+    margin-top:-12%;
     margin-left:1%;
 }
 .user-marco{
-    background:#E9EFF8;
+    background: #F9FAFB;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	padding:1%;
     width:20%;
-    height:60vh;
-   margin-top:-10%;
-   margin-left:3%;
+    height:70vh;
+   margin-top:-29%;
+   margin-left:1%;
+    overflow-y: auto;
 }
 .img{
-    border-radius: 100%;
-    font-size: calc( 0.9+ 1vw);
-    transition: solid .5s;
-    width:10%;
-    height:20vh;
+    width:11%;
+    height:23vh;
+    margin-top:5%;
+    margin-left:1%;
         
 }
-.user-menu{
+.img-upi{
+    width:9%;
+    height:19vh;
+    margin-top:2%;
     margin-left:85%;
-    margin-top:-4%;
+}
+.user-menu{
+    margin-left:88%;
+    margin-top:20%;
 }
 
 /*Estilo del poput */
