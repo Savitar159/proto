@@ -8,6 +8,15 @@
 	color:#75003E;
 	font-size:150%;
 }
+.login-l{
+
+	color:#fff;
+	font-size:120%;
+}
+.main-login{
+	margin-left:20%;
+	margin-top: 2%;
+}
 .titulo-ipn{
 	float: none;
 	width:70%;
@@ -39,9 +48,23 @@
    margin-left:22%;
     overflow-y: auto;
 }
+.user-noticias-login{
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	padding:1%;
+    width:50%;
+    height:60vh;
+    overflow-y: auto;
+}
   .party{
       display: flex;
   }
+ .login{
+ 	background:#75003E;
+ 	width:25%;
+    height:60vh;
+    padding:2%;
+ }
 .img{
     width:11%;
     height:23vh;
@@ -53,6 +76,10 @@
 
     width:85%;
     height:50vh;
+}
+.img-ca-login{
+    width:80%;
+    height:45vh;
 }
 .img-chat{
 
@@ -204,4 +231,3 @@
 .carrusel img {
     cursor:pointer;
 }
-
