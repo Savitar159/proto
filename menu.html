@@ -65,9 +65,15 @@
                         <button id='btn-abrir-popup' class="btn btn-light btn-block">
                            Tutores
                          </button><br>
-                        <button id='btn-abrir-popup' class="btn btn-light btn-block">
+                        <a href="prof.html" class="btn btn-light btn-block">
                            Evaluación
-                         </button>
+                         </a><br>
+                        <a  id='btn-abrir-popups' class="btn btn-light btn-block">
+                           Contraseña
+                         </a><br>
+                          <a href="index.html" class="btn btn-light btn-block">
+                           Cerrar sesión
+                         </a>
                     </center>
             </div>
             <div class="user-noticias">
@@ -95,15 +101,39 @@
         <!-- Edicion de presentacion -->
             <div class="overlay" id="overlay">
                 <div class="popup" id="popup">
-                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">cerrar<i class="fas fa-times"></i></a>
-                    <h2 align="center">!Alerta¡</h2>
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                    <h2 align="center">Chat-upiicsa</h2>
                     <div >
-                        <form action="/aut/eliminar" method="post">
-                            <h5>Nombre<input type="text" readonly class="form-control-plaintext" value="">
-                                Contraseña
-                            <input type="text" readonly class="form-control-plaintext" placeholder="">
-                                Correo
-                            <input type="text" readonly class="form-control-plaintext"placeholder=""></h5>
+                        <form action="#" method="post">
+                            <div>
+                                <img class="img-chat" src="https://www.gradleaders.com/media/4620/live-chat.gif?anchor=center&mode=crop&width=1024&height=512&rnd=132162910640000000" />
+
+                            </div>
+                            <h5>2020134161
+                                <div class="party">
+                                    <input type="text"class="form-control" value="">
+                                    <button type="button" class="btn btn-success">Enviar</button>
+                                </div>
+                            </h5>
+                        </form> 
+                    </div> 
+                </div>
+            </div>
+             <div class="overlay" id="overlays">
+                <div class="popup" id="popups">
+                    <a href="#" id="btn-cerrar-popups" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                    <h2 align="center">Modificar Contraseña</h2>
+                    <div >
+                        <form action="#" method="post">
+                            <center><label>2020134161</label></center><hr>
+                                     <label>Ingresa contraseña actual</label>
+                                    <input type="text"class="form-control" value="">
+                                     <label>Ingresa nueva contraseña </label>
+                                    <input type="text"class="form-control" value="">
+                                    <br>
+                                    <center>
+                                        <button type="button" class="btn btn-success">Modificar</button>
+                                    </center>
                         </form> 
                     </div> 
                 </div>
